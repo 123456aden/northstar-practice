@@ -1,0 +1,52 @@
+[
+  {
+    "order_id": "ORD001",
+    "customer": "Amina",
+    "status": "Processing"
+  },
+  {
+    "order_id": "ORD002",
+    "customer": "Brian",
+    "status": "Shipped"
+  },
+  {
+    "order_id": "ORD003",
+    "customer": "Fatima",
+    "status": "Out for Delivery"
+  },
+  {
+    "order_id": "ORD004",
+    "customer": "James",
+    "status": "Delivered"
+  },
+  {
+    "order_id": "ORD005",
+    "customer": "Mary",
+    "status": "Processing"
+  },
+  {
+    "order_id": "ORD006",
+    "customer": "Ahmed",
+    "status": "Shipped"
+  },
+  {
+    "order_id": "ORD007",
+    "customer": "Grace",
+    "status": "Delivered"
+  },
+  {
+    "order_id": "ORD008",
+    "customer": "Ali",
+    "status": "Out for Delivery"
+  },
+  {
+    "order_id": "ORD009",
+    "customer": "Sarah",
+    "status": "Processing"
+  },
+  {
+    "order_id": "ORD010",
+    "customer": "Peter",
+    "status": "Shipped"
+  }
+]
