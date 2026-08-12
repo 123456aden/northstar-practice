@@ -1,50 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Northstar Order Search</title>
-</head>
-<body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Northstar Order Status</title>
 
-  <h1>Check Your Order Status</h1>
-
-  <p>Enter your order number below:</p>
-
-  <input type="text" id="orderNumber" placeholder="Example: ORD001">
-
-  <button onclick="searchOrder()">Check Order</button>
-
-  <p id="result"></p>
-
-  <script>
-    function searchOrder() {
-      const orderNumber = document.getElementById("orderNumber").value;
-
-      if (orderNumber === "") {
-        document.getElementById("result").innerText =
-          "Please enter an order number.";
-      } else {
-        document.getElementById("result").innerText =
-          "Searching for order: " + orderNumber;
-      }
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 20px;
+      text-align: center;
     }
-  </<!DOCTYPE html>
-<html>
-<head>
-  <title>Northstar Order Search</title>
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    input {
+      padding: 10px;
+      width: 220px;
+      margin: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 18px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #result {
+      margin-top: 25px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
 </head>
+
 <body>
 
   <h1>Check Your Order Status</h1>
 
-  <p>Enter your order number below:</p>
+  <p>Enter your order number below.</p>
 
-  <input type="text" id="orderNumber" placeholder="Example: ORD001">
+  <input
+    type="text"
+    id="orderNumber"
+    placeholder="Example: ORD001"
+  >
 
-  <button onclick="searchOrder()">Check Order</button>
+  <button type="button" onclick="searchOrder()">
+    Check Order
+  </button>
 
   <p id="result"></p>
 
-  <!-- Replace the old script with this new one -->
   <script>
     const orders = {
       "ORD001": "Processing",
@@ -60,28 +72,25 @@
     };
 
     function searchOrder() {
-      const orderNumber = document
-        .getElementById("orderNumber")
-        .value
-        .trim()
-        .toUpperCase();
-
+      const input = document.getElementById("orderNumber");
       const result = document.getElementById("result");
 
+      const orderNumber = input.value.trim().toUpperCase();
+
       if (orderNumber === "") {
-        result.innerText = "Please enter an order number.";
-      } else if (orders[orderNumber]) {
-        result.innerText =
+        result.textContent = "Please enter an order number.";
+        return;
+      }
+
+      if (orders[orderNumber]) {
+        result.textContent =
           "Order " + orderNumber + " status: " + orders[orderNumber];
       } else {
-        result.innerText =
+        result.textContent =
           "Order not found. Please check your order number.";
       }
     }
   </script>
-
-</body>
-</html>>
 
 </body>
 </html>
