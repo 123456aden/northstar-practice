@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Northstar Order Search</title>
+</head>
+<body>
+
+  <h1>Check Your Order Status</h1>
+
+  <p>Enter your order number below:</p>
+
+  <input type="text" id="orderNumber" placeholder="Example: ORD001">
+
+  <button onclick="searchOrder()">Check Order</button>
+
+  <p id="result"></p>
+
+  <script>
+    function searchOrder() {
+      const orderNumber = document.getElementById("orderNumber").value;
+
+      if (orderNumber === "") {
+        document.getElementById("result").innerText =
+          "Please enter an order number.";
+      } else {
+        document.getElementById("result").innerText =
+          "Searching for order: " + orderNumber;
+      }
+    }
+  </script>
+
+</body>
+</html>
