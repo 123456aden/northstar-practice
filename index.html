@@ -27,7 +27,61 @@
           "Searching for order: " + orderNumber;
       }
     }
+  </<!DOCTYPE html>
+<html>
+<head>
+  <title>Northstar Order Search</title>
+</head>
+<body>
+
+  <h1>Check Your Order Status</h1>
+
+  <p>Enter your order number below:</p>
+
+  <input type="text" id="orderNumber" placeholder="Example: ORD001">
+
+  <button onclick="searchOrder()">Check Order</button>
+
+  <p id="result"></p>
+
+  <!-- Replace the old script with this new one -->
+  <script>
+    const orders = {
+      "ORD001": "Processing",
+      "ORD002": "Shipped",
+      "ORD003": "Out for Delivery",
+      "ORD004": "Delivered",
+      "ORD005": "Processing",
+      "ORD006": "Shipped",
+      "ORD007": "Delivered",
+      "ORD008": "Out for Delivery",
+      "ORD009": "Processing",
+      "ORD010": "Shipped"
+    };
+
+    function searchOrder() {
+      const orderNumber = document
+        .getElementById("orderNumber")
+        .value
+        .trim()
+        .toUpperCase();
+
+      const result = document.getElementById("result");
+
+      if (orderNumber === "") {
+        result.innerText = "Please enter an order number.";
+      } else if (orders[orderNumber]) {
+        result.innerText =
+          "Order " + orderNumber + " status: " + orders[orderNumber];
+      } else {
+        result.innerText =
+          "Order not found. Please check your order number.";
+      }
+    }
   </script>
+
+</body>
+</html>>
 
 </body>
 </html>
