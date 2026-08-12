@@ -32,7 +32,7 @@ The team leader will coordinate deadlines, meetings, and final submission.
 
 By writing "Approved" next to our own names, we confirm that we have read and agreed to this Team Charter.
 
-- Aden Ahmed Mohamed —
+- Aden Ahmed Mohamed — APPROVED
 - Alex Ndolo —
 - Ann Wambui —
 - Olufunke Ajayi —
