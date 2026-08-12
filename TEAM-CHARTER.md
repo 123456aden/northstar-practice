@@ -28,6 +28,15 @@ Disagreements will first be discussed respectfully as a team.
 
 ## 9. Team Leader
 The team leader will coordinate deadlines, meetings, and final submission.
+## Team Agreement
+
+By writing "Approved" next to our own names, we confirm that we have read and agreed to this Team Charter.
+
+- Aden Ahmed Mohamed —
+- Alex Ndolo —
+- Ann Wambui —
+- Olufunke Ajayi —
+- Steve Mutuma —
 
 ## 10. Team Agreement
 All members agree to follow this charter during the project.
