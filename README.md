@@ -27,5 +27,9 @@ This repository will be used to practise:
 - Task Assignment
 - File Editing
 - Commits
+## Practice Team Members
+
+- Aden - Project Coordinator
+- Test Collaborator - Developer
 - Collaboration
 - Audit Trail
